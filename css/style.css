@@ -1,0 +1,127 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif; /* style techno/gaming */
+}
+
+body {
+    background-color: #0e0e0e;
+    color: #e0e0e0;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* ===== Titres ===== */
+h2 {
+    font-size: 2rem;
+    color: #00ffcc;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #ff00ff;
+    margin: 15px 0;
+    text-shadow: 0 0 3px #ff00ff, 0 0 7px #ff00ff;
+}
+
+/* ===== Tableaux ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,255,255,0.2);
+}
+
+thead tr {
+    background-color: #111;
+    color: #00ffcc;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #222;
+}
+
+tbody tr:hover {
+    background-color: #333;
+}
+
+/* ===== Checkbox Stylisée ===== */
+.jour-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #ff00ff;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.jour-checkbox:checked {
+    transform: scale(1.2);
+}
+
+/* ===== Progression ===== */
+.progress-container {
+    width: 100%;
+    background-color: #222;
+    border-radius: 10px;
+    margin: 10px 0 30px 0;
+    height: 20px;
+    box-shadow: 0 0 5px #00ffcc;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #00ffcc, #ff00ff);
+    transition: width 0.4s ease-in-out;
+}
+
+/* ===== Semaines et Phases ===== */
+.semaine, .phase {
+    margin-bottom: 50px;
+    padding: 15px;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    background-color: #111;
+    box-shadow: 0 0 15px rgba(255,0,255,0.2);
+}
+
+.phase ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.phase li {
+    padding: 5px 0;
+    border-bottom: 1px solid #222;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+}
